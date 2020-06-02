@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="BAM_primary">#2196F3</color>
+    <color name="BAM_primary_dark">#1976D2</color>
+    <color name="BAM_primary_light">#BBDEFB</color>
+    <color name="BAM_accent">#FFC107</color>
+    <color name="BAM_primary_text">#212121</color>
+    <color name="BAM_secondary_text">#757575</color>
+    <color name="BAM_icons">#FFFFFF</color>
+    <color name="BAM_divider">#BDBDBD</color>
+    
+    <color name="IDO_primary">#3F51B5</color>
+    <color name="IDO_primary_dark">#303F9F</color>
+    <color name="IDO_primary_light">#C5CAE9</color>
+    <color name="IDO_accent">#FF5722</color>
+    <color name="IDO_primary_text">#212121</color>
+    <color name="IDO_secondary_text">#757575</color>
+    <color name="IDO_icons">#FFFFFF</color>
+    <color name="IDO_divider">#BDBDBD</color>
 </resources>
