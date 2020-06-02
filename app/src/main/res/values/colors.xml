@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="BAM_primary">#2196F3</color>
-    <color name="BAM_primary_dark">#1976D2</color>
-    <color name="BAM_primary_light">#BBDEFB</color>
-    <color name="BAM_accent">#FFC107</color>
-    <color name="BAM_primary_text">#212121</color>
-    <color name="BAM_secondary_text">#757575</color>
-    <color name="BAM_icons">#FFFFFF</color>
-    <color name="BAM_divider">#BDBDBD</color>
-    
-    <color name="IDO_primary">#3F51B5</color>
-    <color name="IDO_primary_dark">#303F9F</color>
-    <color name="IDO_primary_light">#C5CAE9</color>
-    <color name="IDO_accent">#FF5722</color>
-    <color name="IDO_primary_text">#212121</color>
-    <color name="IDO_secondary_text">#757575</color>
-    <color name="IDO_icons">#FFFFFF</color>
-    <color name="IDO_divider">#BDBDBD</color>
+<!--    <color name="primaryColor">#f06292</color>-->
+<!--    <color name="primaryLightColor">#ff94c2</color>-->
+<!--    <color name="primaryDarkColor">#ba2d65</color>-->
+<!--    <color name="secondaryColor">#b3e5fc</color>-->
+<!--    <color name="secondaryLightColor">#e6ffff</color>-->
+<!--    <color name="secondaryDarkColor">#82b3c9</color>-->
+<!--    <color name="primaryTextColor">#000000</color>-->
+<!--    <color name="secondaryTextColor">#000000</color>-->
+<!--    <color name="backGroundColor">#e0e0e0</color>-->
+
+    <color name="primaryColor">#f06292</color>
+    <color name="primaryLightColor">#ff94c2</color>
+    <color name="primaryDarkColor">#ba2d65</color>
+    <color name="secondaryColor">#4db6ac</color>
+    <color name="secondaryLightColor">#82e9de</color>
+    <color name="secondaryDarkColor">#00867d</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="backGroundColor">#e0e0e0</color>
 </resources>
