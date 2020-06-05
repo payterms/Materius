@@ -24,4 +24,5 @@
     <string name="text_name">Enter name:</string>
     <string name="log_in">Log in</string>
     <string name="text_name_hint">Enter your nickname</string>
+    <string name="buttonCancel">Close</string>
 </resources>
