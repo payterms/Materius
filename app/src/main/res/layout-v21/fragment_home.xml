@@ -6,36 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="415dp"
-        android:layout_height="350dp"
-        android:contentDescription="Veggies"
-        android:scaleType="centerCrop"
-        android:src="@drawable/carrots"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.core.widget.NestedScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/veggies_rv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text="@string/textviewveggies"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-    </androidx.core.widget.NestedScrollView>
-
-
+        android:layout_height="match_parent"
+        android:foregroundGravity="center_horizontal" />
 </androidx.constraintlayout.widget.ConstraintLayout>
