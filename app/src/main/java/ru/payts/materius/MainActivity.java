@@ -3,6 +3,7 @@ package ru.payts.materius;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -23,14 +24,34 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     String nickname;
 
+    private int themeNumber;
+
+    public static final String EXTRA_THEME = "EXTRA_THEME";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        if(savedInstanceState != null){
+
+            themeNumber = savedInstanceState.getInt(EXTRA_THEME);
+
+            switch (themeNumber) {
+                case 0:
+                    setTheme(R.style.AppThemeRed);
+                    break;
+                case 1:
+                    setTheme(R.style.AppThemeYellow);
+                    break;
+                case 2:
+                    setTheme(R.style.AppThemeGreen);
+                    break;
+            }
+        }
+
+        initActivity();
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -67,8 +88,34 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.theme_menu, menu);
         return true;
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(EXTRA_THEME, themeNumber);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id) {
+            case R.id.red:
+                themeNumber = 0;
+                break;
+            case R.id.yellow:
+                themeNumber = 1;
+                break;
+            case R.id.green:
+                themeNumber = 2;
+                break;
+
+        }
+        recreate();
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -86,5 +133,9 @@ public class MainActivity extends AppCompatActivity {
 
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    private void initActivity() {
+        setContentView(R.layout.activity_main);
     }
 }
